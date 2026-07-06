@@ -65,6 +65,7 @@ This is a **cycle, not a pipeline** — the graph loops back to the Engineer nod
 - **OpenAI (`ChatOpenAI`)** — powers the Architect and Engineer agents
 - **Pygame** — runtime/rendering engine for the generated game
 - **Python `subprocess`** — isolated, timeout-bounded execution of generated code
+- **Databricks** — AI and Data platform of choice
 
 ---
 
@@ -72,7 +73,7 @@ This is a **cycle, not a pipeline** — the graph loops back to the Engineer nod
 
 ```
 .
-├── 26100355_PA4.ipynb     # Main notebook: state schema, agent nodes, graph, invocation
+├── gamerag.ipynb     # Main notebook: state schema, agent nodes, graph, invocation
 ├── dino_runner.py          # Latest AI-generated game (output artifact, overwritten each iteration)
 ├── highscore.txt           # Persisted high score for the generated game
 └── README.md
@@ -163,7 +164,3 @@ Trigger a new iteration to refine the code? (y/n): n
 - **Single-file output** — the Engineer currently regenerates the entire game file each iteration rather than patching specific sections; incremental diff-based edits would reduce regression risk across iterations.
 
 ---
-
-## Acknowledgments
-
-Built for *CS5305/CS621 — Scalable AI Services with Agentic AI, MLOps & LLMOps*, LUMS SBASSE, Spring 2026.
