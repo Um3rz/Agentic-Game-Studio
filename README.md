@@ -1,6 +1,6 @@
 # Agentic Game Studio: A Multi-Agent LangGraph Pipeline for Iterative Game Development
 
-A multi-agent AI system, built with **LangGraph**, that simulates a small software development team — Director, Architect, Engineer, QA, and Scorer — collaborating to design, write, execute, and iteratively refine a fully playable **Chrome Dino-style endless runner game** in Python/Pygame.
+A multi-agent AI system, built with **LangGraph**, that simulates a small software development team , Director, Architect, Engineer, QA and Scorer collaborating to design, write, execute, and iteratively refine a fully playable **Chrome Dino-style endless runner game** in Python/Pygame.
 
 Unlike a single-shot "generate a game" prompt, this system models an actual development loop: an LLM-generated design is turned into code, the code is *actually executed* as a subprocess, real runtime output (errors, stdout) is fed back into the next generation pass, and a human sits in the loop at two critical checkpoints — approving execution and deciding whether another refinement iteration is needed.
 
